@@ -18,11 +18,13 @@
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "postinstall": "npx tsc && npx tsc-alias",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.80",
+    "@types/react": "^18.2.60",
     "typescript": "^4.9.5"
   },
   "keywords": [
@@ -37,5 +39,8 @@
     "customizable-icons",
     "icon-library"
   ],
-  "license": "CC0-1.0"
+  "license": "CC0-1.0",
+  "dependencies": {
+    "react": "^18.2.0"
+  }
 }
